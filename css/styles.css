@@ -1,0 +1,134 @@
+/* Colores */
+:root {
+  --color-principal: #e50914;
+  --color-secundario: #141414;
+  --color-fondo: #000000;
+  --color-texto: #ffffff;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+}
+
+.modo-claro {
+  background-color: white;
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.modo-claro #sobremi {
+  background-color: white;
+  color: black;
+}
+
+/* Encabezado */
+header {
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+  padding: 10px;
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-principal);
+}
+
+/* Sobre mí */
+#sobremi {
+  padding: 10px;
+  background-color: var(--color-fondo);
+}
+
+#sobremi h2 {
+  color: var(--color-principal);
+}
+
+/* Habilidades */
+
+/* Proyectos */
+#proyectos {
+  padding: 10px;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.proyectos-grid article {
+  border: 1px solid var(--color-principal);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-principal);
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-principal);
+}
+
+button {
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b20710;
+}
+
+/* Pie de página */
+
+/* Responsive */
+@media (max-width: 992px) {
+  .proyectos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}

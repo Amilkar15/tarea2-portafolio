@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malvin | Portafolio Personal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Encabezado -->
+
+    <header>
+      <h1>Malvin | Portafolio Personal</h1>
+      <p>Soy un desarrollador en formación</p>
+      <button type="button" id="modo">Cambiar modo</button>
+      <nav>
+        <ul>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sobre mí -->
+
+    <main>
+      <section id="sobremi">
+        <h2>Sobre mí</h2>
+        <p>
+          Estudio para cambiar profesionalmente y pasar más tiempo con mi
+          familia.
+        </p>
+      </section>
+
+      <!-- Habilidades -->
+
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>
+          Estoy aprendiendo a crear páginas web con HTML, CSS y JavaScript.
+          También estoy practicando cómo organizar mejor el contenido, adaptar
+          las páginas a diferentes tamaños de pantalla y añadir interactividad
+          básica.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <article class="bg-zinc-900 text-white p-4 rounded-lg shadow-md">
+            HTML
+          </article>
+
+          <article class="bg-zinc-900 text-white p-4 rounded-lg shadow-md">
+            CSS
+          </article>
+
+          <article class="bg-zinc-900 text-white p-4 rounded-lg shadow-md">
+            JavaScript
+          </article>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos-grid">
+          <article>
+            <h3>LA Movie</h3>
+            <p>Página de entretenimiento</p>
+          </article>
+          <article>
+            <h3>Restaurante El Caribe</h3>
+            <p>Sabor del caribe en cada plato</p>
+          </article>
+          <article>
+            <h3>Mojo</h3>
+            <p>
+              La comida mexicana con todos sus vibrantes sabores, colores y
+              texturas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" placeholder="Escribe tu email" />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" placeholder="Tu mensaje Aquí"></textarea>
+          <button type="submit">Enviar</button>
+          <p id="aviso"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+
+    <footer>© Tarea Portafolio | Malvin</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
